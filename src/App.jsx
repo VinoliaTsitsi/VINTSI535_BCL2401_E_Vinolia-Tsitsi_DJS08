@@ -1,9 +1,9 @@
 //import React from 'react'; 
 //import ReactDOM from 'react-dom/client'; 
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"; 
-import Home from "./home" 
-import About from "./about"
-import Vans from "./vans"
+import Home from "./pages/home" 
+import About from "./pages/about"
+import Vans from "./pages/vans"
 
 function App() {
   return (
