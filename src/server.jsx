@@ -21,7 +21,7 @@ createServer({
             return schema.vans.all()
         })
         
-        this.get("/vans/:id", (schema, request) => {
+        this.get("/vans/:id", (schema, request) => { //this function handles get request to the /vans and /api n point   
             const id = request.params.id
             return schema.vans.find(id)
         })
