@@ -11,5 +11,5 @@ export default function HostLayout() {
             </nav>
             <Outlet />
         </>
-    )
+    );
 }
