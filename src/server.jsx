@@ -1,4 +1,5 @@
-import {createServer, Model} from "miratejs"
+import { createServer, Model } from "miragejs"
+
 
 createServer({
     models: {
@@ -16,12 +17,13 @@ createServer({
 
     routes() {
         this.namespace = "api"
+        this.logging = false
 
-        this.get("/vans", (schema) => {
+        this.get("/vans", (schema, request) => {
             return schema.vans.all()
         })
         
-        this.get("/vans/:id", (schema, request) => { //this function handles get request to the /vans and /api n point   
+        this.get("/vans/:id", (schema, request) => {
             const id = request.params.id
             return schema.vans.find(id)
         })
