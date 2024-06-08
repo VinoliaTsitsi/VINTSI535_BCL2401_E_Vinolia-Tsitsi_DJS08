@@ -2,6 +2,11 @@
 import { Link, NavLink} from "react-router-dom"
 
 export default function Header() {
+    const activeStyles ={
+        fontWeight: "bold",
+        textDecoraton: "underline",
+        color: "#161616" 
+    }
 
     return (
         <header>
