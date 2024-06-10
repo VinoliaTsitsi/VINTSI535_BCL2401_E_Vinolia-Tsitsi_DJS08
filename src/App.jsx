@@ -56,8 +56,8 @@ function App() {
   )
 }
 
-ReactDOM
+/*ReactDOM
   .createRoot(document.getElementById('root'))
-  .render(<App />);
+  .render(<App />);*/
 
   export default App;
