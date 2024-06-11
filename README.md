@@ -1,42 +1,44 @@
 # DJS08 Project Brief: React Router 
 
-🎥 INSERT LOOM PRESENTATION LINK: [Here]
+https://www.loom.com/share/6362d8b7149b4ff7bcfaccfc73981386?sid=43cecd6c-af7c-49db-adac-1594075d36aa
 
-After cloning the repo, run `npm install` to install the dependencies 
+##About the Application
+This is a React application that provides a platform for users to browse and interact with vans. The application has two main sections: one for guests and one for hosts.
 
-Are you ready to get stuck into some React Router? For this challenge, you are required to code along with the lecturer from this lesson: [VanLife Project Bootstrapping](https://scrimba.com/learn/react/vanlife-project-bootstrapping-co8bc40b191eec875ecf00b23).
+##Features
+Guest Section
+Browse available vans
+View van details
+Access pages for about and login
+Host Section (Authenticated)
+Dashboard for managing vans
+Income tracking
+Reviews management
+Van management with details, pricing, and photos
+Directory Structure
+The application is structured into the following directories:
 
-For this challenge you are required to code along with the lecturer from this lesson: https://scrimba.com/learn/react/vanlife-project-bootstrapping-co8bc40b191eec875ecf00b23
+pages: Contains components for each page (e.g., Home, About, Vans, etc.)
+components: Contains reusable UI components (e.g., Layout, HostLayout, AuthRequired, etc.)
+server: Not currently used ( commenting out the import statement)
+Routes
+The application uses React Router to handle client-side routing. The routes are defined in the App.js file and include:
 
-The starter code has all the CSS styling required for the project; you will just need to link the corresponding classes as you code along. Jump into the start code here: [GitHub Repository](https://github.com/CodeSpace-Academy/StudentNo_Classcode_Group_Name-Surname_DJS08/tree/main).
+/: Home page
+/about: About page
+/vans: Vans listing page
+/vans/:id: Van detail page
+/login: Login page
+/host: Host dashboard ( authenticated )
+/host/income: Income tracking page ( authenticated )
+/host/reviews: Reviews management page ( authenticated )
+/host/vans: Van management page ( authenticated )
+/host/vans/:id: Host van detail page with info, pricing, and photos ( authenticated )
+*: 404 Not Found page (catch-all)
 
-The focus for this project will be to understand routing and present your code. Along with your code, you will need to submit a recorded presentation talking through the presentation points included below.
-
-## React Routing Presentation Talking Points
-
-For your recorded presentation, you will be discussing key concepts related to React Router, an essential tool for building single-page applications. To illustrate your understanding, address the following three questions in your presentation. These questions are designed to test your knowledge of the content from the "Advanced React Routing" Van Life Project, including setup, functionality, and application of React Router.
-
-### Question 1: Explain the Setup and Basic Configuration of React Router
-
-**Key Points to Cover:**
-- What is the purpose of using React Router in a React application?
-- How do you set up React Router using `BrowserRouter` as shown in the lessons?
-- Describe the role of the `<Routes>` and `<Route>` components in defining the navigation structure.
-
-### Question 2: Application of Route Parameters and Nested Routes
-
-**Key Points to Cover:**
-- Explain what route parameters are and how they are used in React Router, including the use of `useParams()` to access these parameters.
-- Discuss the concept of nested routes as introduced in the lessons. What are nested routes, and how do they benefit the structure of a React application?
-- Provide an example, such as the configuration for nested routes in the VanLife project.
-
-### Question 3: Implementation of Navigation Controls and Dynamic Linking
-
-**Key Points to Cover:**
-- How does the `<Link>` component enhance navigation within a React application?
-- Describe the use of `NavLink` for active styling. What makes `NavLink` different from the basic `Link` component?
-- Discuss the use of search parameters and the `useSearchParams` hook to dynamically filter content, as seen in the VanLife project challenges.
-
-Be prepared to provide code snippets and real-world application examples from your Van Life Project to support your explanations.
-
-Make sure to submit your project to the DJS08 Project Tab on the LMS. Include a link to your Loom Presentation in your README.
+##Setup and Running
+Run npm install to install dependencies
+Run npm start to start the development server
+Open http://localhost:3000 in your browser to access the application
+Note
+This README is a basic outline of the application's structure and features. You may want to add more details, such as dependencies, testing information, or contributing guidelines, as the project evolves.
